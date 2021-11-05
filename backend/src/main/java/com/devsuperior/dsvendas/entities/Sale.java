@@ -1,4 +1,4 @@
-package com.devsuperior.dsvendas.entities;
+package com.devsuperior.dsvendas.entites;
 
 import java.time.LocalDate;
 
@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -27,7 +27,6 @@ public class Sale {
 	private Seller seller;
 	
 	public Sale() {
-		
 	}
 
 	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
@@ -87,4 +86,3 @@ public class Sale {
 		this.seller = seller;
 	}
 }
-
